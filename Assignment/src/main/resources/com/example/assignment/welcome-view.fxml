@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="780.0" style="-fx-background-color: #f7f7f7;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment.WelcomeController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="336.0" layoutX="444.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../img/background.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="500.0" fitWidth="305.0" layoutX="-39.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../img/istockphoto-1370685108-612x612.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f1f1f1" height="500.0" layoutX="247.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#818181" height="500.0" layoutX="-8.0" opacity="0.12" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="256.0" />
+      <Button fx:id="leaveReqBtn" layoutX="398.0" layoutY="189.0" mnemonicParsing="false" onAction="#leaveReq" prefHeight="39.0" prefWidth="227.0" style="-fx-background-radius: 20; -fx-background-color: #c79476;" text="Request Leave" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Label fx:id="ppName" alignment="CENTER" contentDisplay="CENTER" layoutX="37.0" layoutY="227.0" prefHeight="26.0" prefWidth="174.0">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="ppDepartment" alignment="CENTER" contentDisplay="CENTER" layoutX="61.0" layoutY="252.0" prefHeight="18.0" prefWidth="128.0" textFill="#3e3e3e" />
+      <Label alignment="CENTER" layoutX="101.0" layoutY="274.0" style="-fx-background-color: green; -fx-background-radius: 10;" text="  Active  " textFill="WHITE" />
+      <ImageView fitHeight="128.0" fitWidth="134.0" layoutX="61.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/avatar2.jpg" />
+         </image>
+      </ImageView>
+      <Separator layoutX="24.0" layoutY="310.0" prefWidth="200.0" style="-fx-background-color: #acacac; -fx-background-radius: 20;" />
+      <Button fx:id="signoutBtn" layoutX="398.0" layoutY="335.0" mnemonicParsing="false" onAction="#signout" prefHeight="39.0" prefWidth="227.0" style="-fx-background-radius: 20; -fx-background-color: B8AEA8;" text="Sign Out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="attendenceBtn" layoutX="398.0" layoutY="263.0" mnemonicParsing="false" onAction="#attendence" prefHeight="39.0" prefWidth="227.0" style="-fx-background-radius: 20; -fx-background-color: #c79476;" text="Mark Attendance" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="387.0" layoutY="85.0" text="Welcome to EMS">
+         <font>
+            <Font name="Ebrima" size="33.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label fx:id="empIdLabel" alignment="CENTER" layoutX="60.0" layoutY="335.0" prefHeight="18.0" prefWidth="128.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

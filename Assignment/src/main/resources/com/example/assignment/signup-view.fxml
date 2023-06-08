@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment.HelloController">
+   <children>
+      <ImageView fitHeight="507.0" fitWidth="808.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../img/pic4.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0303037f" height="507.0" layoutX="194.0" opacity="0.52" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="420.0" />
+      <Label layoutX="348.0" layoutY="36.0" text="Sign Up">
+         <font>
+            <Font name="Marlett" size="33.0" />
+         </font>
+      </Label>
+      <TextField fx:id="firstName" layoutX="232.0" layoutY="124.0" prefHeight="30.0" prefWidth="343.0" promptText="Emma" style="-fx-background-radius: 20;">
+         <padding>
+            <Insets left="20.0" />
+         </padding></TextField>
+      <Label layoutX="219.0" layoutY="98.0" text="First Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lastName" layoutX="232.0" layoutY="189.0" prefHeight="30.0" prefWidth="343.0" promptText="Crosby" style="-fx-background-radius: 20;">
+         <padding>
+            <Insets left="20.0" />
+         </padding></TextField>
+      <Label layoutX="219.0" layoutY="163.0" text="Last Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="department" layoutX="232.0" layoutY="253.0" prefHeight="30.0" prefWidth="343.0" promptText="HR" style="-fx-background-radius: 20;">
+         <padding>
+            <Insets left="20.0" />
+         </padding></TextField>
+      <Label layoutX="219.0" layoutY="227.0" text="Department">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameSignup" layoutX="232.0" layoutY="317.0" prefHeight="30.0" prefWidth="343.0" promptText="username" style="-fx-background-radius: 20;">
+         <padding>
+            <Insets left="20.0" />
+         </padding></TextField>
+      <Label layoutX="219.0" layoutY="291.0" text="Username">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="passwordSignup" layoutX="232.0" layoutY="378.0" prefHeight="30.0" prefWidth="343.0" promptText="password" style="-fx-background-radius: 20;">
+         <padding>
+            <Insets left="20.0" />
+         </padding></TextField>
+      <Label layoutX="219.0" layoutY="352.0" text="Password">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="registerBtn" layoutX="434.0" layoutY="441.0" mnemonicParsing="false" onAction="#register" prefHeight="26.0" prefWidth="110.0" style="-fx-background-radius: 20; -fx-background-color: #3e3e3e;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="backBtn" layoutX="263.0" layoutY="441.0" mnemonicParsing="false" onAction="#backHome" prefHeight="26.0" prefWidth="110.0" style="-fx-background-radius: 20; -fx-background-color: #c79476;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
